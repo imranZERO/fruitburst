@@ -9,27 +9,28 @@
 	<script src="https://cdn.tailwindcss.com"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 	<script>
 		tailwind.config = {
 			theme: {
 				extend: {
 					colors: {
 						'fruit-primary': '#F85559',
+						'fruit-dark': '#121212',
 					}
 				}
 			}
 		}
 	</script>
 	<style>
-		.font-lora {
-			font-family: Lora, sans-serif;
+		.font-work {
+			font-family: 'Work Sans', sans-serif;
 		}
 	</style>
 </head>
-<body class="font-lora">
+<body class="font-work">
 	<header>
-		<nav class="mx-4">
+		<nav class="px-4">
 			<div class="navbar max-w-[1366px] mx-auto my-5 md:my-8 lg:p-6 md:rounded-full justify-between md:bg-fruit-primary md:text-white">
 				<div class="navbar-start hidden lg:flex">
 					<ul class="menu menu-horizontal px-1 text-lg">
@@ -41,7 +42,7 @@
 				</div>
 				<div class="lg:hidden">
 					<img src="./images/logo.png" alt="" class="w-10">
-					<a class="btn btn-ghost text-2xl font-bold">Fruit Burst</a>
+					<a class="btn btn-ghost text-2xl font-bold capitalize">Fruit Burst</a>
 				</div>
 				<div class="navbar-end lg:hidden">
 					<div class="dropdown dropdown-end">
@@ -69,14 +70,14 @@
 			</div>
 		</nav>
 
-		<div class="flex justify-center mx-4">
-			<div class="carousel bg-[#FDF1EE] w-[1366px] h-[500px] lg:h-[600px] rounded-xl">
+		<div class="flex justify-center px-4">
+			<div class="carousel bg-[#FDF1EE] w-[1366px] h-[400px] lg:h-[600px] rounded-xl">
 				<div id="slide1" class="carousel-item relative w-full justify-center">
 					<div class="hero bg-cover" style="background-image: url('./images/banner1.png');">
 						<div class="hero-overlay bg-opacity-60"></div>
 						<div class="hero-content text-center text-neutral-content">
 							<div class="text-white w-4/5">
-								<h1 class="mb-5 text-5xl lg:text-7xl font-bold">Exotic tastes at your doorstep</h1>
+								<h1 class="mb-5 text-4xl lg:text-7xl font-bold">Exotic tastes at your doorstep</h1>
 								<p class="mb-5 lg:text-xl">We supply highly quality organic products</p>
 								<button class="btn btn-neutral text-lg bg-fruit-primary border-0 text-white capitalize">Shop Now</button>
 							</div>
@@ -138,7 +139,7 @@
 			</div>
 		</div>
 
-		<div class="hidden lg:flex max-w-[1100px] mx-auto -mt-24 justify-between text-black text-xl px-16 py-10 shadow-xl rounded-xl relative bg-white">
+		<div class="hidden lg:flex max-w-[1100px] mx-auto -mt-24 justify-between text-fruit-dark text-xl px-16 py-10 shadow-xl rounded-xl relative bg-white">
 			<div class="flex items-center flex-col">
 				<img src="./images/fruit1.png" alt="">
 				<p class="mt-2">Grape</p>
@@ -162,7 +163,131 @@
 		</div>
 	</header>
 
-	<main>
+	<main class="max-w-[1366px] mx-auto px-4">
+		<section class="my-20 md:my-28">
+			<div class="flex flex-col lg:flex-row items-center justify-between">
+				<div class="mb-8 text-center lg:text-left">
+					<h2 class="text-4xl md:text-5xl text-fruit-dark font-bold">Deal of the day</h2>
+					<p class="w-4/5 lg:w-3/5 mx-auto lg:mx-0 text-fruit-dark mt-6 text-lg leading-8">Fresh & Sweet: Today's juiciest bargains! Don't miss our 'Deal of the Day'—fruitful savings, one day only!</p>
+				</div>
+				<div class="grid grid-flow-col md:gap-2 text-center auto-cols-max text-fruit-dark">
+					<div class="flex flex-col">
+						<span class="countdown font-bold text-3xl lg:text-5xl mb-1">
+							<span style="--value:29;"></span>
+						</span>
+						days
+					</div>
+					<div class="divider divider-horizontal"></div>
+					<div class="flex flex-col">
+						<span class="countdown font-bold text-3xl lg:text-5xl mb-1">
+							<span style="--value:15;"></span>
+						</span>
+						hours
+					</div>
+					<div class="divider divider-horizontal"></div>
+					<div class="flex flex-col">
+						<span class="countdown font-bold text-3xl lg:text-5xl mb-1">
+							<span style="--value:25;"></span>
+						</span>
+						min
+					</div>
+					<div class="divider divider-horizontal"></div>
+					<div class="flex flex-col">
+						<span class="countdown font-bold text-3xl lg:text-5xl mb-1">
+							<span style="--value:08;"></span>
+						</span>
+						sec
+					</div>
+				</div>
+			</div>
+
+			<div class="flex flex-col lg:flex-row gap-5 mt-12 lg:mt-4">
+				<div class="card w-full bg-base-100 border-2 border-slate-200 shadow">
+					<figure class="px-10 pt-10">
+						<img src="./images/fruit6.png" alt="fruits" class="rounded-xl" />
+					</figure>
+					<div class="card-body items-center text-center">
+						<h2 class="card-title text-2xl">$9.60 - $14.20</h2>
+						<div class="divider my-1"></div>
+						<h4 class="pb-3 text-xl text-slate-600">Apple</h4>
+						<div class="rating pb-3">
+							<input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+							<input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+							<input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+							<input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+							<input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" checked />
+						</div>
+						<div class="card-actions">
+							<button class="btn btn-ghost capitalize text-fruit-primary text-xl font-semibold">Details</button>
+						</div>
+					</div>
+				</div>
+				<div class="card w-full bg-base-100 border-2 border-slate-200 shadow">
+					<figure class="px-10 pt-10">
+						<img src="./images/fruit7.png" alt="fruits" class="rounded-xl" />
+					</figure>
+					<div class="card-body items-center text-center">
+						<h2 class="card-title text-2xl">$13.85 - $22.75</h2>
+						<div class="divider my-1"></div>
+						<h4 class="pb-3 text-xl text-slate-600">Orange</h4>
+						<div class="rating pb-3">
+							<input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+							<input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+							<input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+							<input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+							<input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+						</div>
+						<div class="card-actions">
+							<button class="btn btn-ghost capitalize text-fruit-primary text-xl font-semibold">Details</button>
+						</div>
+					</div>
+				</div>
+				<div class="card w-full bg-base-100 border-2 border-slate-200 shadow">
+					<figure class="px-10 pt-10">
+						<img src="./images/fruit8.png" alt="fruits" class="rounded-xl" />
+					</figure>
+					<div class="card-body items-center text-center">
+						<h2 class="card-title text-2xl">$10.60 - $14.99</h2>
+						<div class="divider my-1"></div>
+						<h4 class="pb-3 text-xl text-slate-600">Red Dragon</h4>
+						<div class="rating pb-3">
+							<input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+							<input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+							<input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+							<input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+							<input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" checked />
+						</div>
+						<div class="card-actions">
+							<button class="btn btn-ghost capitalize text-fruit-primary text-xl font-semibold">Details</button>
+						</div>
+					</div>
+				</div>
+				<div class="card w-full bg-base-100 border-2 border-slate-200 shadow">
+					<figure class="px-10 pt-10">
+						<img src="./images/fruit9.png" alt="fruits" class="rounded-xl" />
+					</figure>
+					<div class="card-body items-center text-center">
+						<h2 class="card-title text-2xl">$12.90 - $18.85</h2>
+						<div class="divider my-1"></div>
+						<h4 class="pb-3 text-xl text-slate-600">Banana</h4>
+						<div class="rating pb-3">
+							<input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+							<input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+							<input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+							<input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" checked />
+							<input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+						</div>
+						<div class="card-actions">
+							<button class="btn btn-ghost capitalize text-fruit-primary text-xl font-semibold">Details</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="flex justify-center mt-12">
+				<button class="btn btn-lg btn-neutral bg-fruit-primary border-0 text-white capitalize">Shop All</button>
+			</div>
+		</section>
 	</main>
 
 	<footer>
