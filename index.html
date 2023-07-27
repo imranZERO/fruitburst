@@ -9,7 +9,7 @@
 	<script src="https://cdn.tailwindcss.com"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/f056a62cc9.js" crossorigin="anonymous"></script>
 	<script>
 		tailwind.config = {
@@ -48,7 +48,7 @@
 				<div class="navbar-end lg:hidden">
 					<div class="dropdown dropdown-end">
 						<label tabindex="0" class="btn btn-ghost">
-							<i class="fa fa-bars text-xl"></i>
+							<i class="fa-solid fa-bars text-xl"></i>
 						</label>
 						<ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black">
 							<li><a class="text-lg">Home</a></li>
@@ -57,7 +57,7 @@
 							<li><a class="text-lg">All Fruits</a></li>
 							<div class="form-control w-full justify-center relative mt-2">
 								<input type="text" placeholder="Search here" class="input input-bordered md:w-auto rounded-full text-sm" />
-								<i class="fa fa-search absolute text-xl text-fruit-dark right-0 mr-4"></i>
+								<i class="fa-solid fa-magnifying-glass absolute text-xl text-fruit-dark right-0 mr-4"></i>
 							</div>
 						</ul>
 					</div>
@@ -389,8 +389,8 @@
 		</section>
 
 		<section class="my-20 md:my-28">
-			<div class="hero lg:h-[675px] rounded-3xl bg-cover bg-no-repeat" style="background-image: url('./images/team.png');">
-				<div class="hero-overlay bg-black bg-opacity-60 rounded-3xl"></div>
+			<div class="hero lg:h-[675px] rounded-xl bg-cover bg-no-repeat" style="background-image: url('./images/team.png');">
+				<div class="hero-overlay bg-black bg-opacity-60 rounded-xl"></div>
 				<div class="hero-content py-20 text-center text-white block">
 					<div class="mb-16">
 						<h1 class="mb-5 text-5xl font-bold">Meet Our Team</h1>
@@ -436,6 +436,71 @@
 								<a href="#"><i class="fa-brands fa-twitter  h-9 w-9 leading-9 text-xl bg-fruit-primary rounded-full"></i></a>
 								<a href="#"><i class="fa-brands fa-linkedin h-9 w-9 leading-9 text-xl bg-fruit-primary rounded-full"></i></a>
 							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="my-20 md:my-28">
+			<h2 class="text-4xl lg:text-5xl text-fruit-dark font-bold text-center">Why Choose Us</h2>
+			<p class="w-5/6 lg:w-3/6 mt-6 mb-10 mx-auto text-center text-gray-600">Welcome to Fruit Burst! We take pride in offering the finest selection of high-quality, ripe, and delicious fruits to our customers.</p>
+			<div class="flex flex-col lg:flex-row gap-y-8">
+				<div class="lg:hidden flex justify-center items-center mx-auto">
+					<img src="./images/whychoose1.png" alt="">
+				</div>
+				<div class="flex flex-col justify-between items-center gap-12 text-center lg:text-left px-8 lg:px-0">
+					<div class="flex flex-col lg:flex-row items-center gap-8">
+						<div><i class="fa-solid fa-users h-16 w-16 bg-gray-200 rounded-full text-lg text-center leading-[4rem]"></i></div>
+						<div class="lg:relative">
+							<h3 class="text-2xl font-bold mb-2">Dedicated Team</h3>
+							<div class="lg:absolute border-b border-gray-300 mx-auto w-28 left-0"></div>
+							<p class="text-gray-600 mt-4">Professional employees are there for you to pick the most fresh fruits.</p>
+						</div>
+					</div>
+					<div class="flex flex-col lg:flex-row items-center gap-8">
+						<div><i class="fa-solid fa-users h-16 w-16 bg-gray-200 rounded-full text-lg text-center leading-[4rem]"></i></div>
+						<div class="lg:relative">
+							<h3 class="text-2xl font-bold mb-2">Fresh is Best</h3>
+							<div class="lg:absolute border-b border-gray-300 mx-auto w-28 left-0"></div>
+							<p class="text-gray-600 mt-4">Freshness redefined: handpicked nature's bounty, delivered to you.</p>
+						</div>
+					</div>
+					<div class="flex flex-col lg:flex-row items-center gap-8">
+						<div><i class="fa-solid fa-users h-16 w-16 bg-gray-200 rounded-full text-lg text-center leading-[4rem]"></i></div>
+						<div class="lg:relative">
+							<h3 class="text-2xl font-bold mb-2">Gift Certificates</h3>
+							<div class="lg:absolute border-b border-gray-300 mx-auto w-28 left-0"></div>
+							<p class="text-gray-600 mt-4">Share the joy of nature's treats with your loved ones today.</p>
+						</div>
+					</div>
+				</div>
+				<div class="hidden lg:flex w-3/4 justify-center items-center mx-auto">
+					<img src="./images/whychoose1.png" alt="">
+				</div>
+				<div class="flex flex-col justify-between items-center gap-12 text-center lg:text-right px-8 lg:px-0">
+					<div class="flex flex-col lg:flex-row-reverse items-center gap-8">
+						<div><i class="fa-solid fa-users h-16 w-16 bg-gray-200 rounded-full text-lg text-center leading-[4rem]"></i></div>
+						<div class="lg:relative">
+							<h3 class="text-2xl font-bold mb-2">Integrated Supplier</h3>
+							<div class="lg:absolute border-b border-gray-300 mx-auto w-28 right-0"></div>
+							<p class="text-gray-600 mt-4">Seamless sourcing: your trusted integrated fruit supplier solution.</p>
+						</div>
+					</div>
+					<div class="flex flex-col lg:flex-row-reverse items-center gap-8">
+						<div><i class="fa-solid fa-users h-16 w-16 bg-gray-200 rounded-full text-lg text-center leading-[4rem]"></i></div>
+						<div class="lg:relative">
+							<h3 class="text-2xl font-bold mb-2">Sustainable Practice</h3>
+							<div class="lg:absolute border-b border-gray-300 mx-auto w-28 right-0"></div>
+							<p class="text-gray-600 mt-4">Harvesting delight: protect nature with sustainable practices!</p>
+						</div>
+					</div>
+					<div class="flex flex-col lg:flex-row-reverse items-center gap-8">
+						<div><i class="fa-solid fa-users h-16 w-16 bg-gray-200 rounded-full text-lg text-center leading-[4rem]"></i></div>
+						<div class="lg:relative">
+							<h3 class="text-2xl font-bold mb-2">The Benefits Only</h3>
+							<div class="lg:absolute border-b border-gray-300 mx-auto w-28 right-0"></div>
+							<p class="text-gray-600 mt-4">Nature's exclusive: savor the delights of unique fruit benefits!</p>
 						</div>
 					</div>
 				</div>
